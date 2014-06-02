@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{284A8B34-550D-45E0-AD1A-F760A888FA64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MedicalV2</RootNamespace>
+    <AssemblyName>MedicalV2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddFollowVisitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFollowVisitForm.Designer.cs">
+      <DependentUpon>AddFollowVisitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForm.Designer.cs">
+      <DependentUpon>AddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicInfo.cs" />
+    <Compile Include="CommonFunc.cs" />
+    <Compile Include="ConstHistory.cs" />
+    <Compile Include="Controls\AllControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AllControl.Designer.cs">
+      <DependentUpon>AllControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CertainTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CertainTabControl.Designer.cs">
+      <DependentUpon>CertainTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ConstHistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ConstHistoryControl.Designer.cs">
+      <DependentUpon>ConstHistoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CurePlanControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CurePlanControl.Designer.cs">
+      <DependentUpon>CurePlanControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageInspectControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageInspectControl.Designer.cs">
+      <DependentUpon>ImageInspectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LabInspectControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LabInspectControl.Designer.cs">
+      <DependentUpon>LabInspectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PhysicalInspectControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PhysicalInspectControl.Designer.cs">
+      <DependentUpon>PhysicalInspectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PresentHistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PresentHistoryControl.Designer.cs">
+      <DependentUpon>PresentHistoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AllTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AllTabControl.Designer.cs">
+      <DependentUpon>AllTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateControl.Designer.cs">
+      <DependentUpon>UpdateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CureFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CureFirst.Designer.cs">
+      <DependentUpon>CureFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurePlan.cs" />
+    <Compile Include="CureSecond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CureSecond.Designer.cs">
+      <DependentUpon>CureSecond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FollowVisit.cs" />
+    <Compile Include="BasicInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicInfoForm.Designer.cs">
+      <DependentUpon>BasicInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FollowVisitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FollowVisitForm.Designer.cs">
+      <DependentUpon>FollowVisitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Msg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Msg.Designer.cs">
+      <DependentUpon>Msg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFollowVisitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchFollowVisitForm.Designer.cs">
+      <DependentUpon>SearchFollowVisitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchResultForm.Designer.cs">
+      <DependentUpon>SearchResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageInspect.cs" />
+    <Compile Include="LabInspect.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicalInspect.cs" />
+    <Compile Include="PresentHistory.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchUpdateForm.Designer.cs">
+      <DependentUpon>SearchUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Test121.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Test121.Designer.cs">
+      <DependentUpon>Test121.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddFollowVisitForm.resx">
+      <DependentUpon>AddFollowVisitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForm.resx">
+      <DependentUpon>AddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicInfoForm.resx">
+      <DependentUpon>BasicInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AllControl.resx">
+      <DependentUpon>AllControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AllTabControl.resx">
+      <DependentUpon>AllTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CertainTabControl.resx">
+      <DependentUpon>CertainTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ConstHistoryControl.resx">
+      <DependentUpon>ConstHistoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CurePlanControl.resx">
+      <DependentUpon>CurePlanControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ImageInspectControl.resx">
+      <DependentUpon>ImageInspectControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LabInspectControl.resx">
+      <DependentUpon>LabInspectControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PhysicalInspectControl.resx">
+      <DependentUpon>PhysicalInspectControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PresentHistoryControl.resx">
+      <DependentUpon>PresentHistoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UpdateControl.resx">
+      <DependentUpon>UpdateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CureFirst.resx">
+      <DependentUpon>CureFirst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Msg.resx">
+      <DependentUpon>Msg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchFollowVisitForm.resx">
+      <DependentUpon>SearchFollowVisitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchResultForm.resx">
+      <DependentUpon>SearchResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SearchUpdateForm.resx">
+      <DependentUpon>SearchUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Test121.resx">
+      <DependentUpon>Test121.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
