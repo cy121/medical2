@@ -22,10 +22,10 @@ namespace MedicalV2
             InitializeComponent();
             DateTime dt = DateTime.Now;
             cfId = string.Format("{0:yyyyMMddHHmm}", dt);
-            string hostId = string.Format("{0:HHmm}", dt);
+            //string hostId = string.Format("{0:HHmm}", dt);
             this.Text = "初治" + cfId;
-            this.HosIDtextBox.Text = hostId;
-            this.HosIDtextBox.ReadOnly = true;
+            //this.HosIDtextBox.Text = hostId;
+            //this.HosIDtextBox.ReadOnly = true;
             this.SexcomboBox.SelectedIndex = 0;
             this.MarriedcomboBox.SelectedIndex = 0;
             this.MarriagegroupBox.Visible = false;

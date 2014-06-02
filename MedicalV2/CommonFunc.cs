@@ -11,7 +11,7 @@ namespace MedicalV2
     {
         static public MySqlConnection getConnection()
         {
-            return new MySqlConnection("Server=localhost;Database=medicaldb2;Uid=USTC;Pwd=123456");
+            return new MySqlConnection("Server=localhost;Database=medical;Uid=root;Pwd=123");
         }
 
         static public string convertToBinary()

@@ -482,6 +482,11 @@ namespace MedicalV2.Controls
             
         }
 
+        private void MenophaniagroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         
 
        
